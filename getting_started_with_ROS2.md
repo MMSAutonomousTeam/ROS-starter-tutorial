@@ -200,12 +200,92 @@ Now it's time to learn about the second communication method in ROS which is ser
 
 #### Services
 
-Services are the second communication method that is introduced in ROS and it works based on a request and response type. meaning that the client sends a request to the server and the server handles this request and get back with the output to the client. 
+Services are the second communication method that is introduced in ROS and it works based on a request and response type. meaning that the client sends a request to the server and the server handles this request and get back with the output to the client.
 
-Services are less common compared to topics in most cases but there are many situations that it's prefered to use services instead of topics. Let's say for example that we want our robot to perform a certain move for example blink when it sees a red obstacle on an obstacle course. we can create a topic that listens for any obstacles and filter for the red ones and take the action required, but this can be computaionally expensive and time latency may appear. Instead we can create a service that we can only call when a red obstacle is detected. 
+Services are less common compared to topics in most cases but there are many situations that it's prefered to use services instead of topics. Let's say for example that we want our robot to perform a certain move for example blink when it sees a red obstacle on an obstacle course. we can create a topic that listens for any obstacles and filter for the red ones and take the action required, but this can be computaionally expensive and time latency may appear. Instead we can create a service that we can only call when a red obstacle is detected.
 
 Services may still a bit blurry for you but with some practical use, we will get used to it.
 
-![topic](images/topic_info.png)
+These following illustrations may help clear things up for you a little.
 
-![topic](images/topic_info.png)
+![topic](images/Service-SingleServiceClient.gif)
+
+![topic](images/Service-SingleServiceClient.gif)
+
+Ok let's try to use a service in our example. right now we have the turtlesim node running and we already closed turtle_teleop_key.
+
+Let's try to run this following command and see what we get:
+
+```bash
+ros2 service call /spawn turtlesim/srv/Spawn "{x: 5.0, y: 5.0, theta: 0.0, name: 'my_turtle'}"
+```
+
+Let's break it down and learn what this command do.
+
+First thing we notice that we used the service command since we are dealing with services. followed up by the call command which enables us to call this service. After that we wrote /spawn which is the service name. then we added the type of the service which is turtlesim/srv/Spawn (something like the message type when we used topics). last thing we add the parameters that this service needs in our case the params were the pose of the turtle and the name of it.
+
+If we look at the turtlesim_node window we notice that there is another turtle that have been spawned and if we list the topics we will find that there are additional topics for the new turtle.
+
+![topic](images/turtle2_topics.png)
+
+And if we use the pub command that we used before but change the topic name we can control the second turtle.
+
+Notice also that we can use the list command for the services as we did for the topics before.
+
+```bash
+ros2 service list
+```
+
+There is also an important command for the services whis is **type**
+
+```bash
+ros2 service type /spawn
+```
+
+before we move on to the next step let's look for a second at the output that is shown on the screen when we used the call command earlier. It looks like this
+
+```bash
+requester: making request: turtlesim.srv.Spawn_Request(x=5.0, y=5.0, theta=0.0, name='my_turtle')
+
+response:
+turtlesim.srv.Spawn_Response(name='my_turtle')
+```
+
+We notice here that there is a requester which was us when we send the command and we gave it the parameters shown. and we got the response from the service which says that there is a turtle that have been spawned with the name my_turtle.
+
+How about we try another service to deepen our understanding of services. Let's use service list to see what other services that we can play with.
+
+![topic](images/service_list.png)
+
+Let's make the turtles teleport to a certain position. To do this we will use the teleport_absolute or teleport_relative services. We can choose which turtle do we want to teleport. Let's try these commands:
+
+```bash
+ros2 service call /turtle1/teleport_absolute turtlesim/srv/TeleportAbsolute "{x: 5.5, y: 7.0, theta: 1.57}"
+ros2 service call /my_turtle/teleport_relative turtlesim/srv/TeleportRelative "{linear: 3.0, angular: 1.57}"
+```
+
+And just like that you are able to control the postition of the turtles with simple commands. But the important question what happens if we ran the turtle_teleop_key. which turtle do we control or do we control them both at the same time. 
+
+Why don't we try and find out for ourselves. Let's run turtle_teleop_key that we ran before.
+
+We notice here that we only control the first turtle which is spawned by default, but why is that and how is this happening.
+
+In simple terms it's because the default topic that the turtle_teleop_key publishes to is /turtle1/cmd_vel. so if we want to control the new turtle that we have spawned all we need to do is to change the topic that we publish to. So how do we change the argument that turtle_teleop_key uses. We can use the remap command to achieve that. In another terminal try running this command:
+
+```bash
+ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=my_turtle/cmd_vel
+```
+
+we will find that we can control the second turtle now as well. This command uses the --ros-args flag to remap the argument that the node uses to be the topic that we desire.
+
+Now we can say that we have a pretty good overview of serivces in ROS2. There is only one communication method that we haven't discussed yet which is actions.
+
+**Actions:** are a combination between services and topics. the client sends a request to the server and the server start performing the required task and give constant feedback back to the client about the progress of this task through a specific feedback topic between them. 
+
+Actions may be blurry for now but don't worry we will cover it later on in this demo. 
+
+Actions are used mostly in the tasks that require constant calculations and the inputs are changing rapidly. The most common example for this is path planning which most nodes in it mainly uses actions to communicate.
+
+---
+
+### Creating our first package
