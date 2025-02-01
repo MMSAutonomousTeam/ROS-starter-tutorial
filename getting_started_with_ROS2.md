@@ -264,7 +264,7 @@ ros2 service call /turtle1/teleport_absolute turtlesim/srv/TeleportAbsolute "{x:
 ros2 service call /my_turtle/teleport_relative turtlesim/srv/TeleportRelative "{linear: 3.0, angular: 1.57}"
 ```
 
-And just like that you are able to control the postition of the turtles with simple commands. But the important question what happens if we ran the turtle_teleop_key. which turtle do we control or do we control them both at the same time. 
+And just like that you are able to control the postition of the turtles with simple commands. But the important question what happens if we ran the turtle_teleop_key. which turtle do we control or do we control them both at the same time.
 
 Why don't we try and find out for ourselves. Let's run turtle_teleop_key that we ran before.
 
@@ -280,12 +280,183 @@ we will find that we can control the second turtle now as well. This command use
 
 Now we can say that we have a pretty good overview of serivces in ROS2. There is only one communication method that we haven't discussed yet which is actions.
 
-**Actions:** are a combination between services and topics. the client sends a request to the server and the server start performing the required task and give constant feedback back to the client about the progress of this task through a specific feedback topic between them. 
+**Actions:** are a combination between services and topics. the client sends a request to the server and the server start performing the required task and give constant feedback back to the client about the progress of this task through a specific feedback topic between them.
 
-Actions may be blurry for now but don't worry we will cover it later on in this demo. 
+Actions may be blurry for now but don't worry we will cover it later on in this demo.
 
 Actions are used mostly in the tasks that require constant calculations and the inputs are changing rapidly. The most common example for this is path planning which most nodes in it mainly uses actions to communicate.
 
 ---
 
 ### Creating our first package
+
+After we discoved most of the main concepts in ROS. It's time to get practical and deepen our knowledge of what we have learned so far, and the best way to do this is by creating our custom project. The first step in a project always is to define the goal of the project so let's pick a simple goal to get us started.
+
+The goal: create a simple script in a custom package to control the turtle to draw a circle.
+
+Ok let's start our journey to achieve this simple goal. First let's recall what we said before about packages and workspaces which service as containers to contain the different elements of our project. so the first thing that we will do is to create a new workspace.
+
+1. Install colcon if it's not already installed
+
+```bash
+sudo apt install python3-colcon-common-extensions
+```
+
+2. Create a new directory with the name you desire and cd into this folder
+
+```bash
+mkdir ROS2_demo_ws
+cd ROS2_demo_ws/
+```
+
+3. Create a new directory inside it and name it **`src`**
+
+```bash
+mkdir src
+```
+
+4. build your workspace
+
+```bash
+colcon build
+```
+
+Voila you have created you first workspace. Now let's move on and create our first package.
+
+You will notice that you workspace contain some additional folders that we didn't create ourselves but ignore those for now.
+
+All packages that we will create will be located in the src folder.
+
+1. cd into the src folder
+
+```bash
+cd src/
+```
+
+2. create the package
+
+```bash
+ros2 pkg create --build-type ament_cmake --license Apache-2.0 --node-name demo_node turtle_package
+```
+
+3. build and source your ws
+
+```bash
+cd ..
+colcon build
+source install/setup.bash
+```
+
+Let's break down the pkg create command
+
+* --build-type: is the build flag which will define if the package will be built based on python or c++. it takes two values either ament_cmake (for c++) or ament_python (for python).
+
+> note that packages built with c++ allows you to use python code in it but python based packages doesn't allow you to use c++ code in it.
+
+* --license: this flag defines the lisence we use. we can ignore it for now
+* --node-name: this flag creates the first node of your package and you can specify it's name (We can skip this flag and create the node ourselves)
+* turtle_package: is the package name
+
+after we have created our package we build the ws and source it.
+
+> We will redo the building and sourcing steps each time we make a change in any of our packages in the ws
+
+To test the package we just created we can run the node that ROS have made for us. we will do this
+
+```bash
+ros2 run turtle_package demo_node 
+```
+
+This will print hello world in the terminal.
+
+Now we are ready to create our node and start writing code to achieve our goal.
+
+1. cd into the src folder in your package
+
+```bash
+cd src/turtle_package/src/
+```
+
+2. create a new file
+
+```bash
+touch circle.py
+```
+
+3. open the file in any editor
+4. write the code for the node
+
+```python
+#!/usr/bin/env python3
+
+import rclpy
+from rclpy.node import Node
+from geometry_msgs.msg import Twist
+
+class Circle(Node):
+    def __init__(self):
+        super().__init__('turtle_circle')
+        self.pub = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
+        self.create_timer(0.1, self.move)
+
+    def move(self):
+        msg = Twist()
+        msg.linear.x = 1.0
+        msg.angular.z = 1.0
+        self.pub.publish(msg)
+
+def main():
+    rclpy.init()
+    rclpy.spin(Circle())
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+```
+
+5. make the file executable
+
+```bash
+chmod +x circle.py
+```
+
+6. modify CMakeLists.txt
+
+```bash
+cd ~/ROS2_demo_ws/src/turtle_package
+#open the cmake folder
+#Add the following line
+install(PROGRAMS
+  src/circle.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+```
+
+7. build and source your ws
+
+```bash
+cd ~/ROS2_demo_ws
+colcon build
+source install/setup.bash
+```
+
+Now we have successfully created our script and we can run it and check whether it's working fine or not.
+
+```
+ros2 run turtle_package circle.py
+```
+
+We will find that the turtle starts to go around in a circle and we have successfully finished our task. but there are some important notes that we should consider before moving to the next step.
+
+* **`#!/usr/bin/env python3`** this line at the start of the python script defines the version which we are working with.
+* **`self.pub = self.create_publisher(Twist, '/turtle1/cmd_vel', 10) `** **'/turtle1/cmd_vel'** is the name of the topic and if we change it to /my_turtle/cmd_vel we can control the turtle that we spawned.
+* We can control more than one turtle at the same time by publishing different messages to different topics.
+* We need to modify the CMakeLists.txt file to make sure that ROS can identify the node that we just added (note that it differs if we are adding a cpp node or a python node, we will see this in the next task)
+
+Since we understand how to create packages and nodes here's a quiz for you to try to make.
+
+The goal: Write your name using turtles where each turtle is responsible for one letter of your name.
+
+Bonus: Write each letter with a unique colour
+
+---

@@ -1,0 +1,23 @@
+[0.013s] Invoking command in '/home/yousef/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package -- -j6 -l6
+[0.064s] [100%] Built target demo_node
+[0.074s] Invoked command in '/home/yousef/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package -- -j6 -l6
+[0.084s] Invoking command in '/home/yousef/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package
+[0.090s] -- Install configuration: ""
+[0.091s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/lib/turtle_package/demo_node
+[0.091s] -- Installing: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/lib/turtle_package/circle.py
+[0.091s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/ament_index/resource_index/package_run_dependencies/turtle_package
+[0.091s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/ament_index/resource_index/parent_prefix_path/turtle_package
+[0.091s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/environment/ament_prefix_path.sh
+[0.091s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/environment/ament_prefix_path.dsv
+[0.092s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/environment/path.sh
+[0.092s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/environment/path.dsv
+[0.092s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/local_setup.bash
+[0.092s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/local_setup.sh
+[0.092s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/local_setup.zsh
+[0.092s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/local_setup.dsv
+[0.092s] -- Installing: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/package.dsv
+[0.092s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/ament_index/resource_index/packages/turtle_package
+[0.092s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/cmake/turtle_packageConfig.cmake
+[0.092s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/cmake/turtle_packageConfig-version.cmake
+[0.093s] -- Up-to-date: /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/package.xml
+[0.094s] Invoked command in '/home/yousef/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yousef/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package
