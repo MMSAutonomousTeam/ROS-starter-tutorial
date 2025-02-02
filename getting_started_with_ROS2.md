@@ -449,14 +449,41 @@ ros2 run turtle_package circle.py
 We will find that the turtle starts to go around in a circle and we have successfully finished our task. but there are some important notes that we should consider before moving to the next step.
 
 * **`#!/usr/bin/env python3`** this line at the start of the python script defines the version which we are working with.
-* **`self.pub = self.create_publisher(Twist, '/turtle1/cmd_vel', 10) `** **'/turtle1/cmd_vel'** is the name of the topic and if we change it to /my_turtle/cmd_vel we can control the turtle that we spawned.
+* **rclpy** is the api that allows us to write python code and integrate python with ROS
+* **rclpy.init()** is the initialization command that initialize ROS communication and it can take some arguments. the most important argument is **domain_id** which defines **ROS domain id** that we are dealing with. since multiple instances of ROS can be running on the same network what defines each instance is the domain id of this instance.
+* **rclpy.spin()** excutes the function provided and blocks the code until either excution is finished or timed out. and after the excution is done it loops back
+* **super().init('turtle_circle')** initialize a node named turtle_circle
+* **`self.pub = self.create_publisher(Twist, '/turtle1/cmd_vel', 10) `** **'/turtle1/cmd_vel'** is the name of the topic and if we change it to **/my_turtle/cmd_vel** we can control the turtle that we spawned.
+* **self.pub.publish(msg)** publish the message on the topic difned in the pub.
 * We can control more than one turtle at the same time by publishing different messages to different topics.
 * We need to modify the CMakeLists.txt file to make sure that ROS can identify the node that we just added (note that it differs if we are adding a cpp node or a python node, we will see this in the next task)
 
 Since we understand how to create packages and nodes here's a quiz for you to try to make.
 
-The goal: Write your name using turtles where each turtle is responsible for one letter of your name.
+> **The goal:** Write your name using turtles where each turtle is responsible for one letter of your name. (If your name is too long write ROS2 instead)
 
-Bonus: Write each letter with a unique colour
+> **Bonus:** Write each letter with a unique color
+
+Now we can say that we successfully finished part 1 of this tutorial It's now time to move on to part 2 where we will learn more about the componenets that we have discussed so far and we will encounter more concepts to learn.
 
 ---
+
+### **Have Questions? Reach Out!** ✉️
+
+If you have any questions or need further clarification about anything in this documentation, feel free to get in touch. We're here to help you on your journey into the world of autonomous systems!
+
+You can contact us at:
+
+📧  **Email** : [mmsautonomousteam@gmail.com](mailto:mmsautonomousteam@gmail.com)
+
+🌐  **GitHub Discussions** : [github](https://github.com/MMSAutonomousTeam/Autonomous-Sessions/discussions)
+
+We're excited to support you and look forward to your questions! 😊
+
+You can also reach out to the author of this document at:
+
+📧  **Email** : [yousefasal50@gmail.com](mailto:yousefasal50@gmail.com)
+
+🌐  **GitHub** : [Yousef-Asal](https://github.com/Yousef-Asal)
+
+🔗  **LinkedIn :** [Yousef Asal](https://www.linkedin.com/in/yousefasal/)
