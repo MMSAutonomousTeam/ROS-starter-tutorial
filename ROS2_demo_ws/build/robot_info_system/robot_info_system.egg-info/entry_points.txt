@@ -1,0 +1,4 @@
+[console_scripts]
+robot_monitor = robot_info_system.robot_monitor:main
+robot_state_publisher = robot_info_system.robot_state_publisher:main
+

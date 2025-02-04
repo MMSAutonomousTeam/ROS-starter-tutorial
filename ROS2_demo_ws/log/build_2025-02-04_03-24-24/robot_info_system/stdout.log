@@ -1,0 +1,20 @@
+running develop
+running egg_info
+writing robot_info_system.egg-info/PKG-INFO
+writing dependency_links to robot_info_system.egg-info/dependency_links.txt
+writing entry points to robot_info_system.egg-info/entry_points.txt
+writing requirements to robot_info_system.egg-info/requires.txt
+writing top-level names to robot_info_system.egg-info/top_level.txt
+reading manifest file 'robot_info_system.egg-info/SOURCES.txt'
+writing manifest file 'robot_info_system.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages/robot-info-system.egg-link (link to .)
+Installing robot_monitor script to /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/robot_info_system
+Installing robot_state_publisher script to /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/robot_info_system
+
+Installed /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system
+running symlink_data
+symbolically linking /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/resource/robot_info_system -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/share/ament_index/resource_index/packages
+symbolically linking /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/package.xml -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/share/robot_info_system
+symbolically linking /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/config/robot_config.yaml -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/share/robot_info_system/config
+symbolically linking /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/launch/robot_system.launch.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/share/robot_info_system/launch

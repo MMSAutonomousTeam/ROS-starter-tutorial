@@ -1,0 +1,24 @@
+[0.686s] Invoking command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system': PYTHONPATH=/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build --no-deps symlink_data --force
+[1.046s] running develop
+[1.057s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.057s]   warnings.warn(
+[1.321s] running egg_info
+[1.321s] writing robot_info_system.egg-info/PKG-INFO
+[1.321s] writing dependency_links to robot_info_system.egg-info/dependency_links.txt
+[1.322s] writing entry points to robot_info_system.egg-info/entry_points.txt
+[1.322s] writing requirements to robot_info_system.egg-info/requires.txt
+[1.322s] writing top-level names to robot_info_system.egg-info/top_level.txt
+[1.323s] reading manifest file 'robot_info_system.egg-info/SOURCES.txt'
+[1.324s] writing manifest file 'robot_info_system.egg-info/SOURCES.txt'
+[1.325s] running build_ext
+[1.325s] Creating /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages/robot-info-system.egg-link (link to .)
+[1.326s] Installing robot_monitor script to /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/robot_info_system
+[1.326s] Installing robot_state_publisher script to /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/robot_info_system
+[1.326s] 
+[1.326s] Installed /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system
+[1.326s] running symlink_data
+[1.327s] symbolically linking /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/resource/robot_info_system -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/share/ament_index/resource_index/packages
+[1.327s] symbolically linking /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/package.xml -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/share/robot_info_system
+[1.327s] symbolically linking /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/config/robot_config.yaml -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/share/robot_info_system/config
+[1.327s] symbolically linking /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/launch/robot_system.launch.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/share/robot_info_system/launch
+[1.353s] Invoked command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system' returned '0': PYTHONPATH=/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build --no-deps symlink_data --force

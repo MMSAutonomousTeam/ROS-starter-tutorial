@@ -1,0 +1,4 @@
+robot_monitor:
+  ros__parameters:
+    battery_threshold: 20
+    temperature_threshold: 75
