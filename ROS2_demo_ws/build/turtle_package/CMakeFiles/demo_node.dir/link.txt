@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/demo_node.dir/src/demo_node.cpp.o -o demo_node 

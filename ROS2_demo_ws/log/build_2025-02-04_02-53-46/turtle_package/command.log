@@ -1,2 +1,0 @@
-Invoking command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package -- -j8 -l8
-Invoked command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package -- -j8 -l8
