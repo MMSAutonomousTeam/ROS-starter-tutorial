@@ -12,7 +12,7 @@
   <depend>sensor_msgs</depend>
   <depend>rosidl_default_generators</depend>
   <depend>rosidl_default_runtime</depend>  <!-- Added for message usage -->
-
+  <member_of_group>rosidl_interface_packages</member_of_group>
 
 
   <test_depend>ament_copyright</test_depend>
