@@ -1,0 +1,29 @@
+[1.622s] Invoking command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src/robot_info_system2': PYTHONPATH=/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_info_system2 build --build-base /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/build install --record /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/install.log --single-version-externally-managed install_data
+[1.809s] /home/zaynap/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+[1.809s]   warnings.warn(msg)
+[1.976s] running egg_info
+[1.998s] writing ../../build/robot_info_system2/robot_info_system2.egg-info/PKG-INFO
+[1.998s] writing dependency_links to ../../build/robot_info_system2/robot_info_system2.egg-info/dependency_links.txt
+[1.998s] writing entry points to ../../build/robot_info_system2/robot_info_system2.egg-info/entry_points.txt
+[1.999s] writing requirements to ../../build/robot_info_system2/robot_info_system2.egg-info/requires.txt
+[1.999s] writing top-level names to ../../build/robot_info_system2/robot_info_system2.egg-info/top_level.txt
+[2.046s] reading manifest file '../../build/robot_info_system2/robot_info_system2.egg-info/SOURCES.txt'
+[2.048s] writing manifest file '../../build/robot_info_system2/robot_info_system2.egg-info/SOURCES.txt'
+[2.048s] running build
+[2.048s] running build_py
+[2.048s] copying robot_info_system2/robot_monitor.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/build/lib/robot_info_system2
+[2.048s] copying robot_info_system2/__init__.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/build/lib/robot_info_system2
+[2.048s] copying robot_info_system2/robot_state_publisher.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/build/lib/robot_info_system2
+[2.049s] running install
+[2.054s] running install_lib
+[2.077s] running install_data
+[2.077s] copying resource/robot_info_system2 -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/share/ament_index/resource_index/packages
+[2.078s] copying package.xml -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/share/robot_info_system2
+[2.078s] running install_egg_info
+[2.102s] removing '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/lib/python3.10/site-packages/robot_info_system2-0.0.0-py3.10.egg-info' (and everything under it)
+[2.102s] Copying ../../build/robot_info_system2/robot_info_system2.egg-info to /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/lib/python3.10/site-packages/robot_info_system2-0.0.0-py3.10.egg-info
+[2.103s] running install_scripts
+[2.281s] Installing robot_monitor script to /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/lib/robot_info_system2
+[2.281s] Installing robot_state_publisher script to /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/lib/robot_info_system2
+[2.281s] writing list of installed files to '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/install.log'
+[2.307s] Invoked command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src/robot_info_system2' returned '0': PYTHONPATH=/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_info_system2 build --build-base /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/build install --record /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/install.log --single-version-externally-managed install_data

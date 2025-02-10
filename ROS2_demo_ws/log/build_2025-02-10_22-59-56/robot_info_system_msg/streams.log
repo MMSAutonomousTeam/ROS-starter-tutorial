@@ -1,0 +1,54 @@
+[0.071s] Invoking command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg -- -j8 -l8
+[0.239s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.800s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.852s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.909s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.236s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.440s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[1.846s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[1.846s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.846s]   robot_info_system_msg --arguments-file
+[1.847s]   /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg/rosidl_adapter__arguments__robot_info_system_msg.json
+[1.847s]   --output-dir
+[1.847s]   /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg/rosidl_adapter/robot_info_system_msg
+[1.847s]   --output-file
+[1.847s]   /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg/rosidl_adapter/robot_info_system_msg.idls)
+[1.847s]   returned error code 1:
+[1.847s] 
+[1.847s]   Error processing 'script (listen --> topic ) subscriper' of
+[1.847s]   'robot_info_system_msg/RobotStatus': ''script' is an invalid message name.
+[1.847s]   It should have the pattern '^[A-Z][A-Za-z0-9]*$''
+[1.848s] 
+[1.848s]   Traceback (most recent call last):
+[1.848s] 
+[1.848s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[1.848s]       return _run_code(code, main_globals, None,
+[1.848s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[1.848s]       exec(code, run_globals)
+[1.848s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.848s]       sys.exit(main())
+[1.848s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[1.848s]       abs_idl_file = convert_to_idl(
+[1.848s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.849s]       return convert_msg_to_idl(
+[1.849s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.849s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.849s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 520, in parse_message_string
+[1.849s]       Type(type_string, context_package_name=pkg_name),
+[1.849s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 277, in __init__
+[1.849s]       super(Type, self).__init__(
+[1.849s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 205, in __init__
+[1.849s]       raise InvalidResourceName(
+[1.849s] 
+[1.849s]   rosidl_adapter.parser.InvalidResourceName: 'script' is an invalid message
+[1.849s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[1.850s] 
+[1.850s] Call Stack (most recent call first):
+[1.850s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.850s]   CMakeLists.txt:42 (rosidl_generate_interfaces)
+[1.850s] 
+[1.850s] [0m
+[1.850s] -- Configuring incomplete, errors occurred!
+[1.850s] See also "/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg/CMakeFiles/CMakeOutput.log".
+[1.869s] gmake: *** [Makefile:747: cmake_check_build_system] Error 1
+[1.871s] Invoked command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg -- -j8 -l8

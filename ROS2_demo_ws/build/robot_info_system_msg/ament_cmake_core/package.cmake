@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "robot_info_system_msg")
 set(robot_info_system_msg_VERSION "0.0.0")
-set(robot_info_system_msg_MAINTAINER "zaynap <zozaahmad203@gmail.com>")
+set(robot_info_system_msg_MAINTAINER "zaynap <name@gmail.com>")
 set(robot_info_system_msg_BUILD_DEPENDS "rclpy" "rclcpp" "std_msgs" "rosidl_default_generators")
 set(robot_info_system_msg_BUILDTOOL_DEPENDS "ament_cmake")
 set(robot_info_system_msg_BUILD_EXPORT_DEPENDS "rclpy" "rclcpp" "std_msgs" "rosidl_default_generators")

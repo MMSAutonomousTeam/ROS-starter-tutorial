@@ -4,7 +4,7 @@
   <name>robot_info_system_msg</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="zozaahmad203@gmail.com">zaynap</maintainer>
+  <maintainer email="name@gmail.com">zaynap</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

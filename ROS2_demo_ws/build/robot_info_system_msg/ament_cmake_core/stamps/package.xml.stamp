@@ -4,7 +4,7 @@
   <name>robot_info_system_msg</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="zozaahmad203@gmail.com">zaynap</maintainer>
+  <maintainer email="name@gmail.com">zaynap</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
@@ -23,3 +23,17 @@
     <build_type>ament_cmake</build_type>
   </export>
 </package>
+
+
+
+
+<!-- <depend>rosidl_default_generators</depend>
+Declares a dependency on the default generators used to create source code from your custom message definitions.
+This is essential when your package includes custom message types.(or custom interfaces )
+
+<exec_depend>rosidl_default_runtime</exec_depend> 
+Declares an execution dependency on rosidl_default_runtime, which is needed at run time for packages that include custom message interfaces.
+
+<member_of_group>rosidl_interface_packages</member_of_group>
+Marks the package as part of the rosidl_interface_packages group.
+This is important for ROS 2 tools to recognize that the package contains message (or interface) definitions. -->
