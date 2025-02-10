@@ -1,0 +1,46 @@
+[0.939s] Invoking command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src/robot_info_system': PYTHONPATH=/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_info_system build --build-base /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build install --record /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/install.log --single-version-externally-managed install_data
+[1.123s] /home/zaynap/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+[1.123s]   warnings.warn(msg)
+[1.270s] running egg_info
+[1.292s] creating ../../build/robot_info_system/robot_info_system.egg-info
+[1.292s] writing ../../build/robot_info_system/robot_info_system.egg-info/PKG-INFO
+[1.293s] writing dependency_links to ../../build/robot_info_system/robot_info_system.egg-info/dependency_links.txt
+[1.293s] writing entry points to ../../build/robot_info_system/robot_info_system.egg-info/entry_points.txt
+[1.293s] writing requirements to ../../build/robot_info_system/robot_info_system.egg-info/requires.txt
+[1.293s] writing top-level names to ../../build/robot_info_system/robot_info_system.egg-info/top_level.txt
+[1.293s] writing manifest file '../../build/robot_info_system/robot_info_system.egg-info/SOURCES.txt'
+[1.345s] reading manifest file '../../build/robot_info_system/robot_info_system.egg-info/SOURCES.txt'
+[1.347s] writing manifest file '../../build/robot_info_system/robot_info_system.egg-info/SOURCES.txt'
+[1.347s] running build
+[1.347s] running build_py
+[1.347s] creating /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build/lib/robot_info_system
+[1.347s] copying robot_info_system/robot_monitor.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build/lib/robot_info_system
+[1.348s] copying robot_info_system/__init__.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build/lib/robot_info_system
+[1.348s] copying robot_info_system/robot_state_publisher.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build/lib/robot_info_system
+[1.348s] creating /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build/lib/msg
+[1.348s] copying msg/__init__.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build/lib/msg
+[1.349s] running install
+[1.355s] running install_lib
+[1.381s] creating /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages/robot_info_system
+[1.381s] copying /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build/lib/robot_info_system/robot_monitor.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages/robot_info_system
+[1.381s] copying /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build/lib/robot_info_system/__init__.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages/robot_info_system
+[1.381s] copying /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build/lib/robot_info_system/robot_state_publisher.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages/robot_info_system
+[1.382s] creating /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages/msg
+[1.382s] copying /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build/lib/msg/__init__.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages/msg
+[1.382s] byte-compiling /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages/robot_info_system/robot_monitor.py to robot_monitor.cpython-310.pyc
+[1.383s] byte-compiling /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages/robot_info_system/__init__.py to __init__.cpython-310.pyc
+[1.383s] byte-compiling /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages/robot_info_system/robot_state_publisher.py to robot_state_publisher.cpython-310.pyc
+[1.384s] byte-compiling /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages/msg/__init__.py to __init__.cpython-310.pyc
+[1.384s] running install_data
+[1.384s] creating /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/share/ament_index/resource_index/packages
+[1.385s] copying resource/robot_info_system -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/share/ament_index/resource_index/packages
+[1.385s] copying package.xml -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/share/robot_info_system
+[1.385s] creating /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/share/robot_info_system/msg
+[1.385s] copying msg/RobotStatus.msg -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/share/robot_info_system/msg
+[1.385s] running install_egg_info
+[1.412s] Copying ../../build/robot_info_system/robot_info_system.egg-info to /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages/robot_info_system-0.0.1-py3.10.egg-info
+[1.412s] running install_scripts
+[1.592s] Installing robot_monitor script to /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/robot_info_system
+[1.592s] Installing robot_state_publisher script to /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/robot_info_system
+[1.592s] writing list of installed files to '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/install.log'
+[1.624s] Invoked command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src/robot_info_system' returned '0': PYTHONPATH=/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_info_system build --build-base /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/build install --record /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system/install.log --single-version-externally-managed install_data

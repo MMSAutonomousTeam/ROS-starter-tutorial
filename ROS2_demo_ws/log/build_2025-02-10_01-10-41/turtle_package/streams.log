@@ -1,0 +1,54 @@
+[0.269s] Invoking command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system:/opt/ros/humble /usr/bin/cmake /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src/turtle_package -DCMAKE_INSTALL_PREFIX=/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package
+[0.320s] -- The C compiler identification is GNU 11.4.0
+[0.377s] -- The CXX compiler identification is GNU 11.4.0
+[0.383s] -- Detecting C compiler ABI info
+[0.445s] -- Detecting C compiler ABI info - done
+[0.459s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.459s] -- Detecting C compile features
+[0.460s] -- Detecting C compile features - done
+[0.464s] -- Detecting CXX compiler ABI info
+[0.540s] -- Detecting CXX compiler ABI info - done
+[0.547s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.547s] -- Detecting CXX compile features
+[0.548s] -- Detecting CXX compile features - done
+[0.550s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.918s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.019s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.131s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.131s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src/turtle_package/include>
+[1.131s] -- Configured cppcheck exclude dirs and/or files: 
+[1.132s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.133s] -- Added test 'lint_cmake' to check CMake code style
+[1.133s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.134s] -- Added test 'uncrustify' to check C / C++ code style
+[1.134s] -- Configured uncrustify additional arguments: 
+[1.135s] -- Added test 'xmllint' to check XML markup files
+[1.137s] -- Configuring done
+[1.142s] -- Generating done
+[1.144s] -- Build files have been written to: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package
+[1.149s] Invoked command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system:/opt/ros/humble /usr/bin/cmake /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src/turtle_package -DCMAKE_INSTALL_PREFIX=/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package
+[1.151s] Invoking command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package -- -j8 -l8
+[1.191s] [ 50%] [32mBuilding CXX object CMakeFiles/demo_node.dir/src/demo_node.cpp.o[0m
+[1.218s] [100%] [32m[1mLinking CXX executable demo_node[0m
+[1.260s] [100%] Built target demo_node
+[1.271s] Invoked command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package -- -j8 -l8
+[1.298s] Invoking command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package
+[1.304s] -- Install configuration: ""
+[1.304s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/lib/turtle_package/demo_node
+[1.304s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/lib/turtle_package/circle.py
+[1.304s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/ament_index/resource_index/package_run_dependencies/turtle_package
+[1.304s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/ament_index/resource_index/parent_prefix_path/turtle_package
+[1.305s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/environment/ament_prefix_path.sh
+[1.305s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/environment/ament_prefix_path.dsv
+[1.305s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/environment/path.sh
+[1.305s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/environment/path.dsv
+[1.305s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/local_setup.bash
+[1.305s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/local_setup.sh
+[1.305s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/local_setup.zsh
+[1.306s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/local_setup.dsv
+[1.306s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/package.dsv
+[1.306s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/ament_index/resource_index/packages/turtle_package
+[1.306s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/cmake/turtle_packageConfig.cmake
+[1.306s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/cmake/turtle_packageConfig-version.cmake
+[1.306s] -- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/package.xml
+[1.309s] Invoked command in '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package

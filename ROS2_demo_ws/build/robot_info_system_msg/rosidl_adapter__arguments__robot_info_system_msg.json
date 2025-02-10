@@ -1,0 +1,6 @@
+{
+  "package_name": "robot_info_system_msg",
+  "non_idl_tuples": [
+    "/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src/robot_info_system_msg:msg/RobotStatus.msg"
+  ]
+}

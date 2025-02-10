@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>robot_info_system2</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="name@email.com">zaynap</maintainer>
+  <license>TODO: License declaration</license>
+
+  <depend>rclpy</depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>robot_info_system_msg</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+
+
+
+<!--read this for more explaination-->
+
+<!-- 
+<?xml version="1.0"?>
+the xmk version you used 
+
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+this define how to find the xml schema for ros2 
+
+<package format="3">
+begins the packages decleraion and format = 3 define the format that should write with 
+
+<name>robot_info_system</name>
+<version>0.0.0</version>
+<description>TODO: Package description</description>
+<maintainer email="name@email.com">zaynap</maintainer>
+<license>TODO: License declaration</license>
+package metadata 
+
+<depend>rclpy</depend>
+Declares a dependency on the rclpy package, which is the ROS 2 Python client library. This dependency is required both at build time and run time.
+
+<depend>std_msgs</depend>
+Declares a dependency on std_msgs, the standard messages package in ROS 2, which provides basic message types.
+note : any package we used any where in our package we should add a depend to it 
+
+<depend>sensor_msgs</depend>
+Declares a dependency on sensor_msgs, which provides message definitions for common sensor data (such as images, laser scans, etc)
+
+
+<test_depend>ament_copyright</test_depend>
+Declares a test dependency on the ament_copyright package, which checks for proper licensing in your source files.
+<test_depend>ament_flake8</test_depend>
+Declares a test dependency on ament_flake8, a tool for enforcing code style (PEP 8) in Python code.
+<test_depend>ament_pep257</test_depend>
+Declares a test dependency on ament_pep257, which checks that your code follows docstring conventions.
+<test_depend>python3-pytest</test_depend>
+Declares a test dependency on pytest for running Python unit tests.
+
+
+<export>
+specify additional metadata and configuration needed by build systems and tools.
+
+<build_type>ament_python</build_type>
+Specifies that the package is built using the ament_python build type.
+This informs the build system that your package is a Python package and should be processed accordingly.
+
+  </export>
+</package>
+do not forget to close the tags 
+ -->

@@ -1,0 +1,10 @@
+/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package/CMakeFiles/uninstall.dir
+/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package/CMakeFiles/turtle_package_uninstall.dir
+/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package/CMakeFiles/demo_node.dir
+/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package/CMakeFiles/test.dir
+/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package/CMakeFiles/edit_cache.dir
+/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package/CMakeFiles/rebuild_cache.dir
+/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package/CMakeFiles/list_install_components.dir
+/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package/CMakeFiles/install.dir
+/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package/CMakeFiles/install/local.dir
+/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package/CMakeFiles/install/strip.dir
