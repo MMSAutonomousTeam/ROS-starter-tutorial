@@ -1,0 +1,365 @@
+[0.000000] (-) TimerEvent: {}
+[0.009452] (robot_info_system_msg) JobQueued: {'identifier': 'robot_info_system_msg', 'dependencies': OrderedDict()}
+[0.009568] (turtle_package) JobQueued: {'identifier': 'turtle_package', 'dependencies': OrderedDict()}
+[0.009632] (robot_info_system2) JobQueued: {'identifier': 'robot_info_system2', 'dependencies': OrderedDict([('robot_info_system_msg', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg')])}
+[0.009685] (robot_info_system_msg) JobStarted: {'identifier': 'robot_info_system_msg'}
+[0.076459] (turtle_package) JobStarted: {'identifier': 'turtle_package'}
+[0.089690] (robot_info_system_msg) JobProgress: {'identifier': 'robot_info_system_msg', 'progress': 'cmake'}
+[0.100054] (-) TimerEvent: {}
+[0.123591] (robot_info_system_msg) JobProgress: {'identifier': 'robot_info_system_msg', 'progress': 'build'}
+[0.123670] (robot_info_system_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg', '--', '-j8', '-l8'], 'cwd': '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'zaynap'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zaynap'), ('OLDPWD', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('SYSTEMD_EXEC_PID', '2483'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zaynap'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zaynap'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/zaynap/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zaynap:@/tmp/.ICE-unix/2447,unix/zaynap:/tmp/.ICE-unix/2447'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6d1254d0_5fcc_4218_a4de_0b9765b9d3e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('MATLAB_JAVA', '/usr/lib/jvm/java-11-openjdk-amd64/'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QE3012'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.179073] (turtle_package) JobProgress: {'identifier': 'turtle_package', 'progress': 'cmake'}
+[0.200282] (-) TimerEvent: {}
+[0.202314] (turtle_package) JobProgress: {'identifier': 'turtle_package', 'progress': 'build'}
+[0.203723] (turtle_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package', '--', '-j8', '-l8'], 'cwd': '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'zaynap'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zaynap'), ('OLDPWD', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('SYSTEMD_EXEC_PID', '2483'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zaynap'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zaynap'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/zaynap/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zaynap:@/tmp/.ICE-unix/2447,unix/zaynap:/tmp/.ICE-unix/2447'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6d1254d0_5fcc_4218_a4de_0b9765b9d3e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('MATLAB_JAVA', '/usr/lib/jvm/java-11-openjdk-amd64/'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QE3012'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.300493] (-) TimerEvent: {}
+[0.401258] (-) TimerEvent: {}
+[0.501891] (-) TimerEvent: {}
+[0.602553] (-) TimerEvent: {}
+[0.677582] (turtle_package) StdoutLine: {'line': b'[100%] Built target demo_node\n'}
+[0.693596] (turtle_package) CommandEnded: {'returncode': 0}
+[0.702658] (-) TimerEvent: {}
+[0.704793] (robot_info_system_msg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.717047] (turtle_package) JobProgress: {'identifier': 'turtle_package', 'progress': 'install'}
+[0.725737] (turtle_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package'], 'cwd': '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'zaynap'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zaynap'), ('OLDPWD', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('SYSTEMD_EXEC_PID', '2483'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zaynap'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zaynap'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/zaynap/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zaynap:@/tmp/.ICE-unix/2447,unix/zaynap:/tmp/.ICE-unix/2447'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6d1254d0_5fcc_4218_a4de_0b9765b9d3e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('MATLAB_JAVA', '/usr/lib/jvm/java-11-openjdk-amd64/'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QE3012'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/turtle_package'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.742598] (turtle_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.744182] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/lib/turtle_package/demo_node\n'}
+[0.745106] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/lib/turtle_package/circle.py\n'}
+[0.745778] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/ament_index/resource_index/package_run_dependencies/turtle_package\n'}
+[0.746424] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/ament_index/resource_index/parent_prefix_path/turtle_package\n'}
+[0.746888] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/environment/ament_prefix_path.sh\n'}
+[0.747308] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/environment/ament_prefix_path.dsv\n'}
+[0.747787] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/environment/path.sh\n'}
+[0.748542] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/environment/path.dsv\n'}
+[0.748981] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/local_setup.bash\n'}
+[0.749381] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/local_setup.sh\n'}
+[0.749813] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/local_setup.zsh\n'}
+[0.750225] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/local_setup.dsv\n'}
+[0.750638] (turtle_package) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/package.dsv\n'}
+[0.762232] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/ament_index/resource_index/packages/turtle_package\n'}
+[0.762687] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/cmake/turtle_packageConfig.cmake\n'}
+[0.762978] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/cmake/turtle_packageConfig-version.cmake\n'}
+[0.763238] (turtle_package) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/turtle_package/share/turtle_package/package.xml\n'}
+[0.766092] (turtle_package) CommandEnded: {'returncode': 0}
+[0.802790] (-) TimerEvent: {}
+[0.903089] (-) TimerEvent: {}
+[0.933451] (turtle_package) JobEnded: {'identifier': 'turtle_package', 'rc': 0}
+[1.003204] (-) TimerEvent: {}
+[1.103679] (-) TimerEvent: {}
+[1.203174] (robot_info_system_msg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.203695] (-) TimerEvent: {}
+[1.228444] (robot_info_system_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.291362] (robot_info_system_msg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.303931] (-) TimerEvent: {}
+[1.404537] (-) TimerEvent: {}
+[1.481367] (robot_info_system_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.504800] (-) TimerEvent: {}
+[1.605506] (-) TimerEvent: {}
+[1.705968] (robot_info_system_msg) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.706409] (-) TimerEvent: {}
+[1.806891] (-) TimerEvent: {}
+[1.907392] (-) TimerEvent: {}
+[2.007646] (-) TimerEvent: {}
+[2.107906] (-) TimerEvent: {}
+[2.139730] (robot_info_system_msg) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.208025] (-) TimerEvent: {}
+[2.308274] (-) TimerEvent: {}
+[2.347185] (robot_info_system_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.408391] (-) TimerEvent: {}
+[2.508714] (-) TimerEvent: {}
+[2.608977] (-) TimerEvent: {}
+[2.696584] (robot_info_system_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.709125] (-) TimerEvent: {}
+[2.776839] (robot_info_system_msg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.809214] (-) TimerEvent: {}
+[2.860103] (robot_info_system_msg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.860795] (robot_info_system_msg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.861269] (robot_info_system_msg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.909356] (-) TimerEvent: {}
+[2.924197] (robot_info_system_msg) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.009620] (-) TimerEvent: {}
+[3.105015] (robot_info_system_msg) StdoutLine: {'line': b'-- Generating done\n'}
+[3.109689] (-) TimerEvent: {}
+[3.110895] (robot_info_system_msg) StdoutLine: {'line': b'-- Build files have been written to: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg\n'}
+[3.152247] (robot_info_system_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_info_system_msg__rosidl_generator_c\x1b[0m\n'}
+[3.177114] (robot_info_system_msg) StdoutLine: {'line': b'[  9%] Built target robot_info_system_msg__rosidl_generator_c\n'}
+[3.182788] (robot_info_system_msg) StdoutLine: {'line': b'[ 12%] Built target robot_info_system_msg__cpp\n'}
+[3.190307] (robot_info_system_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_info_system_msg__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[3.192664] (robot_info_system_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_info_system_msg__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.192908] (robot_info_system_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_info_system_msg__rosidl_typesupport_c\x1b[0m\n'}
+[3.193598] (robot_info_system_msg) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_robot_info_system_msg\n'}
+[3.195369] (robot_info_system_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_info_system_msg__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[3.195590] (robot_info_system_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_info_system_msg__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[3.196269] (robot_info_system_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_info_system_msg__rosidl_typesupport_cpp\x1b[0m\n'}
+[3.205571] (robot_info_system_msg) StdoutLine: {'line': b'[ 32%] Built target robot_info_system_msg__rosidl_typesupport_introspection_c\n'}
+[3.205800] (robot_info_system_msg) StdoutLine: {'line': b'[ 32%] Built target robot_info_system_msg__rosidl_typesupport_c\n'}
+[3.205917] (robot_info_system_msg) StdoutLine: {'line': b'[ 41%] Built target robot_info_system_msg__rosidl_typesupport_fastrtps_c\n'}
+[3.209503] (robot_info_system_msg) StdoutLine: {'line': b'[ 58%] Built target robot_info_system_msg__rosidl_typesupport_cpp\n'}
+[3.209755] (-) TimerEvent: {}
+[3.209895] (robot_info_system_msg) StdoutLine: {'line': b'[ 61%] Built target robot_info_system_msg__rosidl_typesupport_introspection_cpp\n'}
+[3.210014] (robot_info_system_msg) StdoutLine: {'line': b'[ 70%] Built target robot_info_system_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[3.225961] (robot_info_system_msg) StdoutLine: {'line': b'[ 70%] Built target robot_info_system_msg\n'}
+[3.263569] (robot_info_system_msg) StdoutLine: {'line': b'[ 74%] Built target robot_info_system_msg__py\n'}
+[3.272224] (robot_info_system_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_info_system_msg__rosidl_generator_py\x1b[0m\n'}
+[3.309848] (-) TimerEvent: {}
+[3.317374] (robot_info_system_msg) StdoutLine: {'line': b'[ 80%] Built target robot_info_system_msg__rosidl_generator_py\n'}
+[3.326772] (robot_info_system_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_info_system_msg__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[3.328889] (robot_info_system_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_info_system_msg__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[3.329386] (robot_info_system_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_info_system_msg__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[3.338313] (robot_info_system_msg) StdoutLine: {'line': b'[ 87%] Built target robot_info_system_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.341938] (robot_info_system_msg) StdoutLine: {'line': b'[ 93%] Built target robot_info_system_msg__rosidl_typesupport_c__pyext\n'}
+[3.342264] (robot_info_system_msg) StdoutLine: {'line': b'[100%] Built target robot_info_system_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[3.409945] (-) TimerEvent: {}
+[3.474019] (robot_info_system_msg) StdoutLine: {'line': b'running egg_info\n'}
+[3.495473] (robot_info_system_msg) StdoutLine: {'line': b'writing robot_info_system_msg.egg-info/PKG-INFO\n'}
+[3.495872] (robot_info_system_msg) StdoutLine: {'line': b'writing dependency_links to robot_info_system_msg.egg-info/dependency_links.txt\n'}
+[3.496230] (robot_info_system_msg) StdoutLine: {'line': b'writing top-level names to robot_info_system_msg.egg-info/top_level.txt\n'}
+[3.510014] (-) TimerEvent: {}
+[3.559466] (robot_info_system_msg) StdoutLine: {'line': b"reading manifest file 'robot_info_system_msg.egg-info/SOURCES.txt'\n"}
+[3.570028] (robot_info_system_msg) StdoutLine: {'line': b"writing manifest file 'robot_info_system_msg.egg-info/SOURCES.txt'\n"}
+[3.597292] (robot_info_system_msg) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_robot_info_system_msg_egg\n'}
+[3.606230] (robot_info_system_msg) CommandEnded: {'returncode': 0}
+[3.610090] (-) TimerEvent: {}
+[3.645892] (robot_info_system_msg) JobProgress: {'identifier': 'robot_info_system_msg', 'progress': 'install'}
+[3.646140] (robot_info_system_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg'], 'cwd': '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'zaynap'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zaynap'), ('OLDPWD', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('SYSTEMD_EXEC_PID', '2483'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'zaynap'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zaynap'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/zaynap/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zaynap:@/tmp/.ICE-unix/2447,unix/zaynap:/tmp/.ICE-unix/2447'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6d1254d0_5fcc_4218_a4de_0b9765b9d3e5'), ('GNOME_SETUP_DISPLAY', ':1'), ('MATLAB_JAVA', '/usr/lib/jvm/java-11-openjdk-amd64/'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QE3012'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.170'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.653289] (robot_info_system_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.653499] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/ament_index/resource_index/rosidl_interfaces/robot_info_system_msg\n'}
+[3.653626] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg\n'}
+[3.653722] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg\n'}
+[3.653784] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.653842] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/robot_status.h\n'}
+[3.653898] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail\n'}
+[3.653955] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/robot_status__type_support.h\n'}
+[3.654037] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/robot_status__struct.h\n'}
+[3.654102] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/robot_status__functions.h\n'}
+[3.654159] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/robot_status__functions.c\n'}
+[3.654219] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/environment/library_path.sh\n'}
+[3.654280] (robot_info_system_msg) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/environment/library_path.dsv\n'}
+[3.654366] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/lib/librobot_info_system_msg__rosidl_generator_c.so\n'}
+[3.654464] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg\n'}
+[3.654525] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg\n'}
+[3.654592] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail\n'}
+[3.654728] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/robot_status__rosidl_typesupport_fastrtps_c.h\n'}
+[3.654808] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.654871] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/lib/librobot_info_system_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[3.654962] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg\n'}
+[3.655026] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg\n'}
+[3.655087] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.655159] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail\n'}
+[3.655231] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/robot_status__rosidl_typesupport_introspection_c.h\n'}
+[3.655322] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/robot_status__type_support.c\n'}
+[3.655389] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/lib/librobot_info_system_msg__rosidl_typesupport_introspection_c.so\n'}
+[3.655594] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/lib/librobot_info_system_msg__rosidl_typesupport_c.so\n'}
+[3.655720] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg\n'}
+[3.655820] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg\n'}
+[3.655882] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/robot_status.hpp\n'}
+[3.655943] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail\n'}
+[3.656022] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/robot_status__traits.hpp\n'}
+[3.656127] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/robot_status__struct.hpp\n'}
+[3.656189] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/robot_status__builder.hpp\n'}
+[3.656254] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg\n'}
+[3.656319] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg\n'}
+[3.656377] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail\n'}
+[3.656438] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/robot_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.656499] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/dds_fastrtps\n'}
+[3.656559] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.656657] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/lib/librobot_info_system_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.656738] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg\n'}
+[3.656803] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg\n'}
+[3.656867] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail\n'}
+[3.656925] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/robot_status__type_support.cpp\n'}
+[3.656986] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/include/robot_info_system_msg/robot_info_system_msg/msg/detail/robot_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.657067] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/lib/librobot_info_system_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[3.657292] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/lib/librobot_info_system_msg__rosidl_typesupport_cpp.so\n'}
+[3.657417] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/environment/pythonpath.sh\n'}
+[3.657498] (robot_info_system_msg) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/environment/pythonpath.dsv\n'}
+[3.657576] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg-0.0.0-py3.10.egg-info\n'}
+[3.657675] (robot_info_system_msg) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.657758] (robot_info_system_msg) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.657838] (robot_info_system_msg) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.657916] (robot_info_system_msg) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.658019] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg\n'}
+[3.658108] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/librobot_info_system_msg__rosidl_generator_py.so\n'}
+[3.658169] (robot_info_system_msg) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/__init__.py\n'}
+[3.658249] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/robot_info_system_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.658353] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/robot_info_system_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.658419] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/robot_info_system_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.658476] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/msg\n'}
+[3.658533] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/msg/__init__.py\n'}
+[3.658593] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/msg/_robot_status_s.c\n'}
+[3.658662] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/msg/_robot_status.py\n'}
+[3.658720] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/_robot_info_system_msg_s.ep.rosidl_typesupport_c.c\n'}
+[3.658776] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/_robot_info_system_msg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.658832] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/_robot_info_system_msg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.703773] (robot_info_system_msg) StdoutLine: {'line': b"Listing '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg'...\n"}
+[3.703919] (robot_info_system_msg) StdoutLine: {'line': b"Compiling '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/__init__.py'...\n"}
+[3.703985] (robot_info_system_msg) StdoutLine: {'line': b"Listing '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/msg'...\n"}
+[3.708128] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/robot_info_system_msg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.708520] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/robot_info_system_msg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.708913] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages/robot_info_system_msg/robot_info_system_msg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.709306] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/lib/librobot_info_system_msg__rosidl_generator_py.so\n'}
+[3.709435] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/msg/RobotStatus.idl\n'}
+[3.709555] (robot_info_system_msg) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/msg/RobotStatus.msg\n'}
+[3.709652] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/ament_index/resource_index/package_run_dependencies/robot_info_system_msg\n'}
+[3.709752] (robot_info_system_msg) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/ament_index/resource_index/parent_prefix_path/robot_info_system_msg\n'}
+[3.709852] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/environment/ament_prefix_path.sh\n'}
+[3.709958] (robot_info_system_msg) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/environment/ament_prefix_path.dsv\n'}
+[3.710062] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/environment/path.sh\n'}
+[3.710140] (-) TimerEvent: {}
+[3.710274] (robot_info_system_msg) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/environment/path.dsv\n'}
+[3.710367] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/local_setup.bash\n'}
+[3.710430] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/local_setup.sh\n'}
+[3.710505] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/local_setup.zsh\n'}
+[3.710608] (robot_info_system_msg) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/local_setup.dsv\n'}
+[3.710721] (robot_info_system_msg) StdoutLine: {'line': b'-- Installing: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/package.dsv\n'}
+[3.710779] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/ament_index/resource_index/packages/robot_info_system_msg\n'}
+[3.710834] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/export_robot_info_system_msg__rosidl_generator_cExport.cmake\n'}
+[3.710908] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/export_robot_info_system_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.711009] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/export_robot_info_system_msg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.711113] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/export_robot_info_system_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.711224] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/robot_info_system_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.711304] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/robot_info_system_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.711401] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/robot_info_system_msg__rosidl_typesupport_cExport.cmake\n'}
+[3.711468] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/robot_info_system_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.711562] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/export_robot_info_system_msg__rosidl_generator_cppExport.cmake\n'}
+[3.711653] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/export_robot_info_system_msg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.711750] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/export_robot_info_system_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.711904] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/robot_info_system_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.711968] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/robot_info_system_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.712096] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/robot_info_system_msg__rosidl_typesupport_cppExport.cmake\n'}
+[3.712199] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/robot_info_system_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.712291] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/export_robot_info_system_msg__rosidl_generator_pyExport.cmake\n'}
+[3.712394] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/export_robot_info_system_msg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.712527] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[3.712648] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.712737] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.712794] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.712850] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.712911] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.712965] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.713019] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/robot_info_system_msgConfig.cmake\n'}
+[3.713072] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/cmake/robot_info_system_msgConfig-version.cmake\n'}
+[3.713125] (robot_info_system_msg) StdoutLine: {'line': b'-- Up-to-date: /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/share/robot_info_system_msg/package.xml\n'}
+[3.714379] (robot_info_system_msg) CommandEnded: {'returncode': 0}
+[3.767903] (robot_info_system_msg) JobEnded: {'identifier': 'robot_info_system_msg', 'rc': 0}
+[3.768802] (robot_info_system2) JobStarted: {'identifier': 'robot_info_system2'}
+[3.810230] (-) TimerEvent: {}
+[3.910631] (-) TimerEvent: {}
+[4.010900] (-) TimerEvent: {}
+[4.111164] (-) TimerEvent: {}
+[4.211472] (-) TimerEvent: {}
+[4.311676] (-) TimerEvent: {}
+[4.412171] (-) TimerEvent: {}
+[4.512834] (-) TimerEvent: {}
+[4.613729] (-) TimerEvent: {}
+[4.714407] (-) TimerEvent: {}
+[4.815048] (-) TimerEvent: {}
+[4.915678] (-) TimerEvent: {}
+[5.016130] (-) TimerEvent: {}
+[5.116798] (-) TimerEvent: {}
+[5.217402] (-) TimerEvent: {}
+[5.318107] (-) TimerEvent: {}
+[5.418725] (-) TimerEvent: {}
+[5.519560] (-) TimerEvent: {}
+[5.620304] (-) TimerEvent: {}
+[5.720940] (-) TimerEvent: {}
+[5.821654] (-) TimerEvent: {}
+[5.922293] (-) TimerEvent: {}
+[6.022993] (-) TimerEvent: {}
+[6.123698] (-) TimerEvent: {}
+[6.224378] (-) TimerEvent: {}
+[6.325028] (-) TimerEvent: {}
+[6.425767] (-) TimerEvent: {}
+[6.526452] (-) TimerEvent: {}
+[6.627136] (-) TimerEvent: {}
+[6.728017] (-) TimerEvent: {}
+[6.828709] (-) TimerEvent: {}
+[6.929385] (-) TimerEvent: {}
+[7.030090] (-) TimerEvent: {}
+[7.130760] (-) TimerEvent: {}
+[7.231407] (-) TimerEvent: {}
+[7.332317] (-) TimerEvent: {}
+[7.433112] (-) TimerEvent: {}
+[7.541839] (-) TimerEvent: {}
+[7.642579] (-) TimerEvent: {}
+[7.743307] (-) TimerEvent: {}
+[7.844016] (-) TimerEvent: {}
+[7.944920] (-) TimerEvent: {}
+[8.045711] (-) TimerEvent: {}
+[8.146475] (-) TimerEvent: {}
+[8.247241] (-) TimerEvent: {}
+[8.348030] (-) TimerEvent: {}
+[8.448766] (-) TimerEvent: {}
+[8.549457] (-) TimerEvent: {}
+[8.650232] (-) TimerEvent: {}
+[8.750951] (-) TimerEvent: {}
+[8.851721] (-) TimerEvent: {}
+[8.952410] (-) TimerEvent: {}
+[9.053238] (-) TimerEvent: {}
+[9.153875] (-) TimerEvent: {}
+[9.254544] (-) TimerEvent: {}
+[9.355273] (-) TimerEvent: {}
+[9.456011] (-) TimerEvent: {}
+[9.556671] (-) TimerEvent: {}
+[9.657268] (-) TimerEvent: {}
+[9.757955] (-) TimerEvent: {}
+[9.858758] (-) TimerEvent: {}
+[9.959535] (-) TimerEvent: {}
+[10.060256] (-) TimerEvent: {}
+[10.160880] (-) TimerEvent: {}
+[10.261479] (-) TimerEvent: {}
+[10.362101] (-) TimerEvent: {}
+[10.462704] (-) TimerEvent: {}
+[10.563114] (-) TimerEvent: {}
+[10.663772] (-) TimerEvent: {}
+[10.764192] (-) TimerEvent: {}
+[10.864700] (-) TimerEvent: {}
+[10.965161] (-) TimerEvent: {}
+[11.065537] (-) TimerEvent: {}
+[11.166173] (-) TimerEvent: {}
+[11.266786] (-) TimerEvent: {}
+[11.367658] (-) TimerEvent: {}
+[11.468532] (-) TimerEvent: {}
+[11.569209] (-) TimerEvent: {}
+[11.632548] (robot_info_system2) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_info_system2', 'build', '--build-base', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/build', 'install', '--record', '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src/robot_info_system2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'zaynap', 'LC_TIME': 'ar_EG.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/zaynap', 'OLDPWD': '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ar_EG.UTF-8', 'SYSTEMD_EXEC_PID': '2483', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'zaynap', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'zaynap', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/zaynap/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/zaynap:@/tmp/.ICE-unix/2447,unix/zaynap:/tmp/.ICE-unix/2447', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_EG.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6d1254d0_5fcc_4218_a4de_0b9765b9d3e5', 'GNOME_SETUP_DISPLAY': ':1', 'MATLAB_JAVA': '/usr/lib/jvm/java-11-openjdk-amd64/', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_EG.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.QE3012', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.170', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '8', 'AMENT_PREFIX_PATH': '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_EG.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ar_EG.UTF-8', 'LC_IDENTIFICATION': 'ar_EG.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/lib/python3.10/site-packages:/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ar_EG.UTF-8', 'LC_PAPER': 'ar_EG.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system_msg'}, 'shell': False}
+[11.669285] (-) TimerEvent: {}
+[11.769554] (-) TimerEvent: {}
+[11.797092] (robot_info_system2) StderrLine: {'line': b"/home/zaynap/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[11.797273] (robot_info_system2) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[11.869666] (-) TimerEvent: {}
+[11.923665] (robot_info_system2) StdoutLine: {'line': b'running egg_info\n'}
+[11.945112] (robot_info_system2) StdoutLine: {'line': b'writing ../../build/robot_info_system2/robot_info_system2.egg-info/PKG-INFO\n'}
+[11.945615] (robot_info_system2) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_info_system2/robot_info_system2.egg-info/dependency_links.txt\n'}
+[11.945809] (robot_info_system2) StdoutLine: {'line': b'writing entry points to ../../build/robot_info_system2/robot_info_system2.egg-info/entry_points.txt\n'}
+[11.946039] (robot_info_system2) StdoutLine: {'line': b'writing requirements to ../../build/robot_info_system2/robot_info_system2.egg-info/requires.txt\n'}
+[11.947710] (robot_info_system2) StdoutLine: {'line': b'writing top-level names to ../../build/robot_info_system2/robot_info_system2.egg-info/top_level.txt\n'}
+[11.969767] (-) TimerEvent: {}
+[11.987715] (robot_info_system2) StdoutLine: {'line': b"reading manifest file '../../build/robot_info_system2/robot_info_system2.egg-info/SOURCES.txt'\n"}
+[12.004016] (robot_info_system2) StdoutLine: {'line': b"writing manifest file '../../build/robot_info_system2/robot_info_system2.egg-info/SOURCES.txt'\n"}
+[12.004267] (robot_info_system2) StdoutLine: {'line': b'running build\n'}
+[12.004381] (robot_info_system2) StdoutLine: {'line': b'running build_py\n'}
+[12.004444] (robot_info_system2) StdoutLine: {'line': b'copying robot_info_system2/robot_monitor.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/build/lib/robot_info_system2\n'}
+[12.004582] (robot_info_system2) StdoutLine: {'line': b'copying robot_info_system2/__init__.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/build/lib/robot_info_system2\n'}
+[12.004800] (robot_info_system2) StdoutLine: {'line': b'copying robot_info_system2/robot_state_publisher.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/build/lib/robot_info_system2\n'}
+[12.004998] (robot_info_system2) StdoutLine: {'line': b'running install\n'}
+[12.009775] (robot_info_system2) StdoutLine: {'line': b'running install_lib\n'}
+[12.031228] (robot_info_system2) StdoutLine: {'line': b'copying /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/build/lib/robot_info_system2/robot_state_publisher.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/lib/python3.10/site-packages/robot_info_system2\n'}
+[12.031753] (robot_info_system2) StdoutLine: {'line': b'byte-compiling /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/lib/python3.10/site-packages/robot_info_system2/robot_state_publisher.py to robot_state_publisher.cpython-310.pyc\n'}
+[12.032257] (robot_info_system2) StdoutLine: {'line': b'running install_data\n'}
+[12.032461] (robot_info_system2) StdoutLine: {'line': b'copying resource/robot_info_system2 -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/share/ament_index/resource_index/packages\n'}
+[12.032686] (robot_info_system2) StdoutLine: {'line': b'copying package.xml -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/share/robot_info_system2\n'}
+[12.032951] (robot_info_system2) StdoutLine: {'line': b'creating /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/share/robot_info_system2/launch\n'}
+[12.033111] (robot_info_system2) StdoutLine: {'line': b'copying launch/launch.py -> /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/share/robot_info_system2/launch\n'}
+[12.033187] (robot_info_system2) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.054996] (robot_info_system2) StdoutLine: {'line': b"removing '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/lib/python3.10/site-packages/robot_info_system2-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[12.055187] (robot_info_system2) StdoutLine: {'line': b'Copying ../../build/robot_info_system2/robot_info_system2.egg-info to /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/lib/python3.10/site-packages/robot_info_system2-0.0.0-py3.10.egg-info\n'}
+[12.064568] (robot_info_system2) StdoutLine: {'line': b'running install_scripts\n'}
+[12.069837] (-) TimerEvent: {}
+[12.170053] (-) TimerEvent: {}
+[12.233206] (robot_info_system2) StdoutLine: {'line': b'Installing robot_monitor script to /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/lib/robot_info_system2\n'}
+[12.233384] (robot_info_system2) StdoutLine: {'line': b'Installing robot_state_publisher script to /home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/install/robot_info_system2/lib/robot_info_system2\n'}
+[12.233649] (robot_info_system2) StdoutLine: {'line': b"writing list of installed files to '/home/zaynap/ROS-starter-tutorial/ROS2_demo_ws/build/robot_info_system2/install.log'\n"}
+[12.264436] (robot_info_system2) CommandEnded: {'returncode': 0}
+[12.270170] (-) TimerEvent: {}
+[12.270857] (robot_info_system2) JobEnded: {'identifier': 'robot_info_system2', 'rc': 0}
+[12.271585] (-) EventReactorShutdown: {}

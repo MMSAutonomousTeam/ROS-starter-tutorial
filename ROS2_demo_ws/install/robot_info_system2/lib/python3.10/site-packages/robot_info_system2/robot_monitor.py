@@ -3,6 +3,7 @@
 import rclpy
 from rclpy.node import Node
 from robot_info_system_msg.msg import RobotStatus
+import logging 
 
 class RobotMonitor(Node):
     def __init__(self):
@@ -12,6 +13,7 @@ class RobotMonitor(Node):
         # Declare parameters with default values
         self.declare_parameter('battery_threshold', 20)
         self.declare_parameter('temperature_threshold', 75)
+        self.get_logger().set_level(logging.DEBUG)
         
         # Retrieve the parameter values and store them in instance variables
         self.battery_threshold = self.get_parameter('battery_threshold').value
@@ -42,11 +44,11 @@ class RobotMonitor(Node):
 
         # Check if the battery level is below the declared threshold.
         if battery < self.battery_threshold:
-            self.get_logger().warn('⚠️ Low Battery!')
+            self.get_logger().warn('Low Battery!')
 
         # Check if the temperature exceeds the declared threshold.
         if temperature > self.temperature_threshold:
-            self.get_logger().warn('🔥 High Temperature!')
+            self.get_logger().warn('High Temperature!')
 
 def main():
     # Initialize the ROS 2 Python client library.

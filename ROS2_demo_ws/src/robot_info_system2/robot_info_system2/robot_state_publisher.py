@@ -19,7 +19,7 @@ class RobotStatePublisher(Node):
         # Initialize the Node with the name 'robot_state_publisher'
         super().__init__('robot_state_publisher')
         # Create a publisher for the custom RobotStatus message on the 'robot_status' topic
-        self.publisher_ = self.create_publisher(RobotStatus, 'robot_status', 10)
+        self.publisher_ = self.create_publisher(RobotStatus, 'robot_status',1)  #hz 
         # Set a timer to call publish_state() every 1.0 second
         self.timer = self.create_timer(1.0, self.publish_state)
         self.get_logger().info("RobotStatePublisher node has been started.")
@@ -34,6 +34,7 @@ class RobotStatePublisher(Node):
         msg.battery_level = Int32(data=random.randint(0, 100))
         # Set the temperature field using a random integer (20 to 100) wrapped in a UInt8
         msg.temperature = UInt8(data=random.randint(20, 100))
+                                
         
         # Publish the message on the 'robot_status' topic
         self.publisher_.publish(msg)
